@@ -1,4 +1,4 @@
-package com.example.demo;
+package dal.cloud.tourism;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan({"controller","service"})
 public class DemoServiceApplication {
 
 	public static void main(String[] args) {
