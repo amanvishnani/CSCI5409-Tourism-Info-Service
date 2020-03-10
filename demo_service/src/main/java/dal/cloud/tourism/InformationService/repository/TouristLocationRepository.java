@@ -12,13 +12,13 @@ import dal.cloud.tourism.InformationService.model.TouristLocation;
 @Repository
 public interface TouristLocationRepository extends JpaRepository<TouristLocation, Integer> {
 
-	@Query(value = "SELECT t.* FROM TouristLocation t "
+	@Query(value = "SELECT t.* FROM tourist_location t "
 			+ "JOIN City c on t.city_Id = c.city_Id "
-			+ "where c.province = :province", nativeQuery = true) 
+			+ "where c.province = :province", nativeQuery = true)
 	public List<TouristLocation> getLocationsByProvince(String province);
 	
-	@Query(value = "SELECT t.* FROM TouristLocation t "
-			+ "where t.city_Id = :cityId", nativeQuery = true) 
+	@Query(value = "SELECT t.* FROM tourist_location t "
+			+ "where t.city_Id = :cityId", nativeQuery = true)
 	public List<TouristLocation> getLocationsByCityId(int cityId);
 
 }
