@@ -1,0 +1,10 @@
+localhost:8080/provinces/all
+
+localhost:8080/cities/all
+localhost:8080/cities/cityById?cityId=1
+localhost:8080/cities/citiesByProvince?province=Nova Scotia
+
+localhost:8080/touristLocations/all
+localhost:8080/touristLocations/locationById?locationId=3
+localhost:8080/touristLocations/locationsByProvince?province=Nova Scotia
+localhost:8080/touristLocations/locationsByCityId?cityId=1
