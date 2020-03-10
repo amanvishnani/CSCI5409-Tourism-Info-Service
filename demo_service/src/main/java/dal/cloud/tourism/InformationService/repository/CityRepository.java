@@ -7,18 +7,18 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import dal.cloud.tourism.InformationService.model.City;
 import dal.cloud.tourism.InformationService.model.TouristLocation;
 
 @Repository
-public interface TouristLocationRepository extends JpaRepository<TouristLocation, Integer> {
+public interface CityRepository extends JpaRepository<City, Integer> {
 	
-	@Query(value = "SELECT t.* FROM TouristLocation t "
-			+ "JOIN City c on t.city_Id = c.city_Id "
+	@Query(value = "SELECT * FROM city c "
 			+ "where c.province = :province", nativeQuery = true) 
-	public List<TouristLocation> getLocationsByProvince(String province);
+	public List<City> getCitiesByProvince(String province);
 	
-	@Query(value = "SELECT t.* FROM TouristLocation t "
-			+ "where t.city_Id = :cityId", nativeQuery = true) 
-	public List<TouristLocation> getLocationsByCityId(int cityId);
+	@Query(value = "SELECT * FROM city c "
+			+ "where c.city_id = :cityId", nativeQuery = true)
+	public City getCityById(int cityId);
 
 }

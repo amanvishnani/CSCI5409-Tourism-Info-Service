@@ -13,22 +13,22 @@ public class TouristLocation {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int locationId;
+	public int locationId;
 	
 	@Column
-	private int cityId;
+	public int cityId;
 	
 	@Column
-	private String name;
+	public String name;
 
 	@Column
-	private String type;
+	public String type;
 	
 	@Column
-	private String url;
+	public String url;
 	
 	@Column
-	private String features;
+	public String features;
 
 	public int getLocationId() {
 		return locationId;
