@@ -29,8 +29,8 @@ public class CityController {
 	
 	@RequestMapping("/cityById")
 	public City getCitiesByCityId(@RequestParam("cityId") int cityId){
-		City province = cityRepository.getCityById(cityId);
-		return province;
+		City city = cityRepository.getCityById(cityId);
+		return city;
 	}
 	
 	@RequestMapping("/citiesByProvince")

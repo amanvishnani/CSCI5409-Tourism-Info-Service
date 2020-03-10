@@ -8,3 +8,12 @@ localhost:8080/touristLocations/all
 localhost:8080/touristLocations/locationById?locationId=3
 localhost:8080/touristLocations/locationsByProvince?province=Nova Scotia
 localhost:8080/touristLocations/locationsByCityId?cityId=1
+
+http://localhost:8080/routes/all
+http://localhost:8080/routes/routeById?routeId=1
+http://localhost:8080/routes/routeBySourceDestination?sourceId=1&destinationId=2
+
+http://localhost:8080/journey/all
+http://localhost:8080/journey/journeyById?journeyId=4
+http://localhost:8080/journey/journeyByRouteId?routeId=1
+http://localhost:8080/journey/journeyByCompanyId?companyId=1
