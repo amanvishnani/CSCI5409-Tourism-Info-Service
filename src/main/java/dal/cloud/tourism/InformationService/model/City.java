@@ -20,6 +20,9 @@ public class City {
 	
 	@Column
 	public String province;
+	
+	@Column
+	public String url;
 
 	public int getCityId() {
 		return cityId;
@@ -43,6 +46,14 @@ public class City {
 
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 
 }
