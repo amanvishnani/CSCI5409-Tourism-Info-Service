@@ -216,7 +216,7 @@ insert into booking values (0,1,4,"Credit Card",250,'2020-03-10 09:39:01',2);
 ##########################################################################################
 select * from user;
 select * from tourist_location;
-select * from city;
+select * from city where name like 'hali%';
 select * from route;
 select * from company;
 select * from bus;
