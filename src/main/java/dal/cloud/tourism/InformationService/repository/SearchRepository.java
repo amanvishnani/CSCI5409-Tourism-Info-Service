@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import dal.cloud.tourism.InformationService.model.City;
 
-@RepositoryRestResource(collectionResourceRel = "search", path = "search")
 @Repository
 public interface SearchRepository extends JpaRepository<City, Integer> {
 
